@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<title>QOOD</title>
+<link rel="shortcut icon" href="static/images/logo13t.png" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('static/images/comidita.jpg');
+  min-height: 100%;
+  <!-- Imatge portada q es mou   ;  -->
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("static/images/menjar tw6.png");
+  min-height: 400px;
+  <!-- Imatge 2 q es mou -->
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url('static/images/empresa.jpg');
+  min-height: 400px;
+  <!-- Imatge 3 q es mou -->
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+.video-size{
+  }
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+  .video-size{
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black" id="myNavbar">
+    <a class="w3-bar-item w3-large w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <b href="#home" class="w3-bar-item w3-large w3-black w3-button">QOOD</b>  
+      
+      <div class="w3-right w3-hide-small">
+    <a href="#about" class="w3-bar-item w3-button w3-large w3-hide-small"><i class="fa fa-home"></i> Que es?</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-large w3-hide-small"><i class="fa fa-th"></i> Servicio</a>
+    <a href="#devolver" class="w3-bar-item w3-button w3-large w3-hide-small"><i class="fa fa-globe"></i> Devolver QOOD</a>
+    <a href="#equipo" class="w3-bar-item w3-button w3-large w3-hide-small"><i class="fa fa-user"></i> Equipo</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-large w3-hide-small"><i class="fa fa-envelope"></i> Contacto</a>
+      </div>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">QUE ES?</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVICIO</a>
+    <a href="#devolver" class="w3-bar-item w3-button" onclick="toggleFunction()">DEVOLVER QOOD</a>
+    <a href="#equipo" class="w3-bar-item w3-button" onclick="toggleFunction()">EQUIPO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap; font-weight:bold;">
+    <span class="w3-center w3-padding-large w3-teal w3-text-black w3-xxxlarge w3-wide w3-animate-opacity">QOOD <span class="w3-hide-small"></span> </span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-light-grey w3-padding-64" id="about">
+  <h3 class="w3-center">QUE ES QOOD?</h3>
+  <p class="w3-center"><em>Innovación</em></p>
+  <p>Qood es un sistema de reutilización de envoltorios de comida para llevar con un envase propio muy innovador. Mediante tuppers modulares buscamos sustituir el plástico, papel y otros materiales desechables con los que se empaqueta la comida. ¿Nuestro objetivo? Eliminar totalmente este tipo de residuo que ahora se encuentra en alza debido al incremento de la demanda que con la pandemia está experimentando el encargo de comida. Nuestro tupper particular, Qood, tiene un sistema de encajes que permite el almacenamiento de estos de forma modular, eficiente y optimizada. El cliente recibe su comida en un Qood y lo devuelve depositándolo en un tanque con contraprestación económica. Finalmente se recoge, se lava y se devuelve al restaurante.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="static/images/qood.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>En términos sociales Qood pretende cambiar el hábito que hay en la sociedad de consumir residuos de un solo uso, por una práctica más ecológico y circular. 
+De esta forma también sumamos al impacto social a un sector especialmente perjudicado por la pandemia como es la hostelería. Qood permitirá que la restauración se sume a la revolución verde, al conseguir la continuidad de su actividad sin la producción de basura de un solo uso.
+</p>
+    </div>
+</div>
+</div>
+    
+    
+    <!-- Promo Section - "SERVICIO"           -->
+<div class="w3-container w3-light-grey w3-padding-large w3-margin" id="portfolio">
+  <div class="center">
+    <div class="S">
+      <h3>SERVICIO</h3>
+      <p>Es por eso que hemos decidido crear Qood, un tupper innovador hecho de polipropileno que a través de un sistema logístico basado en la economía circular promete tener un gran impacto ecológico y social. 
+Qood consiste en sustituir los embalajes tradicionales de la comida para llevar por tuppers modulares. Además plantea darle una visión de recirculación al sector de la comida rápida, re-aprovechar los recursos usados y eliminar los embalajes.</p>
+
+</p>El funcionamiento es sencillo: </p>
+<ol>
+  <li>El restaurante o bar que ofrece la comida para llevar, empaqueta el producto en un envase Qood para su posterior entrega al cliente. Este último pagará el importe correspondiente a la comida más un suplemento por el envase reutilizable.</li>
+  <li>Durante los siguientes días,  el cliente deposita a Qood en un tanque de retorno a cambio de una compensación económica igual al suplemento pagado anteriormente. Estos tanques estarían localizados en lugares estratégicos para facilitar su devolución, como supermercados, paradas de metro, estaciones o lugares transitados de la calle. Por su capacidad modular, los tuppers Qood se podrán almacenar de una forma optimizada y eficiente.</li>
+  <li>Nuestra empresa se encarga de recoger los envases de los tanques para poder proceder con su limpieza y desinfección garantizada. De nuevo, la forma de Qood permite hacer toda la fase de transporte sin necesidad de embalaje de los tuppers gracias a su funcionamiento de bloques.</li>
+  <li>Finalmente se vuelve a entregar los tuppers de nuevo al restaurante para volver a ponerlos en circulación, cerrando así su ciclo.</li>
+</ol>
+      <p><a href="#devolver" class="w3-button w3-black"><i class="fa fa-globe"> </i> Devolver QOOD</a></p>
+    </div>
+    <div class="w3-center">
+      <iframe class= "video-size" 
+      src="https://www.youtube.com/embed/Nntwu03szZs">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+    
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">7</span><br>
+    Restaurantes 
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">5</span><br>
+    Contenedores
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">+200</span><br>
+    Entregas
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">+150</span><br>
+    Clientes satisfechos
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-black w3-wide">PRODUCTO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">TIPOS DE QOODS</h3>
+  <p class="w3-center"><em>Existen difernetes tipos de envases dependiendo de la comida contenida<br> Pulsa en la imagen para ver su función</em></p><br>
+  
+
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="static/images/Funcionament_lateral_frontal.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Funcionament_lateral_frontal">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="static/images/Funcionament_superior.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="static/images/Perfil.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="static/images/Planta_qualitat.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="static/images/Vista_detall_2.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="static/images/Vista_detall_1.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="static/images/Exemple.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="static/images/Vista_trimetrica_QUALITAT.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-light-grey w3-padding-64" id="devolver">
+  <h3 class="w3-center">DEVOLVER QOOD</h3>
+  <p class="w3-center"><em>Puedes devolver tus qoods en qualquier contenedor indicado en el mapa</em></p>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+            <img src="static/images/maps.jpg" class="w3-image w3-round" style="width:100%">
+    </div>     
+    <div class="w3-col m6 w3-padding-large">
+      <p>Como devolver el qood?</p>
+      <ol>
+  <li>Dirigete a qualquier contenedor de los disponibles en el mapa</li>
+  <li>Asegurate de que tu envase tiene la tapa correctamente insertada</li>
+  <li>En el contenedor de devolución, pulsa el botón: DEVOLVER QOOD</li>
+  <li>Introduce el QOOD por la abertura indicada</li>
+  <li>Listo, el importe a devolver ya se le ha ingresado en su cuenta</li>
+</ol>
+    </div>
+      </div>
+    </div>
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide">EMPRESA</span>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">LA EMPRESA</h3>
+  <p class="w3-center w3-large">Conoce nuestros valores</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Receptiva</p>
+      <p>Tenemos muy en cuenta la opinión de nuestros clientes y nos guiamos a partir de sus valoraciones y demandas. Estamos abiertos a peticiones y proyectos de mejora</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passión</p>
+      <p>Uno de nuestros objetivos es cultivar concienciar de la necesidad de cambiar nuestros habitos de consumo para conseguir transformar el modelo actual en sotenible i respetuoso con el medioambiente</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Excelencia</p>
+      <p>Trabajamos día tras día para poder brindar los mejores productos y el mejor servicio. Te ofrecemos un trato personalizado y cercano</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Dinámica</p>
+      <p>Nuestra empresa está en constante movimiento. Actualmente es necesario estar al día en las últimas tecnologías y metodologías y cambiar según la situación y el contexto en el que nos encontramos</p>
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="equipo">
+  <h3 class="w3-center">CONOCENOS</h3>
+  <p class="w3-center w3-large">Dirigentes de la empresa</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="static/images/aleix.jpg" alt="Aleix" style="width:100%">
+        <div class="w3-container">
+          <h3>Aleix Roch</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>qwertyuiopasdfghjklñzxcvbnm</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contactar</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+         <img src="static/images/marcg.jpg" alt="Marc" style="width:100%">
+        <div class="w3-container">
+          <h3>Marc Monllonch</h3>
+          <p class="w3-opacity">Chief digital officer</p>
+          <p>Estudiante de Ingeniería Industrial en la UPC y amante de todo tipo de deportes de riesgo, especialmente la escalada.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contactar</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="static/images/pedro2.JPG" alt="Pedro" style="width:100%">
+        <div class="w3-container">
+          <h3>Pedro Gamarra</h3>
+          <p class="w3-opacity">Chief commercial officer</p>
+          <p>qwertyuiopasdfghjklñzxcvbnm</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contactar</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACTO</h3>
+  <p class="w3-center w3-large">Pongamonos en contacto. Envianos un mensaje:</p>
+  <div style="margin-top:48px">
+    <div class="w3-col m7 w3-center">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Barcelona, SPA</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telef: +00 XXXXXXXX</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: qood@gmail.com</p>
+    <br>
+    </div>
+    <div class="w3-col m3 w3-center">
+      <iframe width="100%" height="100%"
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1778.9904021268555!2d2.115418559397323!3d41.385088225625196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49678ef40aebd%3A0x898caaf63b47e51b!2sEscola%20T%C3%A8cnica%20Superior%20d&#39;Enginyeria%20Industrial%20de%20Barcelona%20(UPC)!5e0!3m2!1ses!2ses!4v1613764215286!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="static/images/barcelona32.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Volver arriba</a>
+  <div class="w3-xlarge w3-section">
+    <a class="fa fa-instagram w3-hover-opacity" href="https://www.upc.edu/ca"></a>
+    <i class="fa fa-youtube w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.upc.edu/ca" title="W3.CSS" target="_blank" class="w3-hover-text-green">UPC</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
